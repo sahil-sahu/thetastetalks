@@ -1,0 +1,28 @@
+
+.joinus{
+
+    width: 100%;
+    background-color: #FFDED6;
+    padding: .5rem;
+
+}
+
+.click {
+
+    color: #E3B692;
+    font-weight: 700;
+
+}
+
+.heading{
+
+    width: 100%;
+
+}
+ .heading img{
+     margin: 1rem auto;
+     width: 100%;
+     max-width: fit-content;
+     display: block;
+     padding: 0px 5px;
+ }
