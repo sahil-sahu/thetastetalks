@@ -1,0 +1,51 @@
+
+.nav a{
+
+    color: #E3B692;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+.nav ul{
+
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 90rem;
+    margin: auto;
+
+}
+
+.nav ul::before{
+
+    content: "";
+    border-bottom: solid 1px #000;
+    width: 55%;
+    max-width: 80rem;
+    margin: 0px auto;
+    position: absolute;
+    height: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+
+}
+
+@media screen and (max-width: 600px){
+
+    .nav ul{
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .nav a{
+        font-size: 1.2rem;
+    }
+    
+}
+

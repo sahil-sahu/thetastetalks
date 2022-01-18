@@ -1,0 +1,42 @@
+
+.mainHeading{
+
+    padding: 10px;
+    text-align: center;
+    margin-top: 2rem;
+
+}
+
+.caption{
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 100rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.caption a{
+
+    font-weight: 600;
+    text-align: right;
+
+}
+
+@media screen and (max-width:600px) {
+    
+    .mainHeading{
+
+        font-size: 1.5rem;
+    }
+    
+    .caption{
+        
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+}
+
