@@ -19,7 +19,7 @@
 
 }
 
-.navBefore ul::before{
+.navDown ul::before{
 
     content: "";
     border-bottom: solid 1px var(--black);
