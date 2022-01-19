@@ -1,9 +1,9 @@
 import styles from "./main.module.css"
 import Card from "./card"
 
-function cardWrapper1(){
+function People(){
     return(
-        <div className="cardWrapper1">
+        <div className={styles.People}>
             <Card></Card>
             <Card></Card>
             <Card></Card>
@@ -11,4 +11,4 @@ function cardWrapper1(){
     )
 }
 
-export default cardWrapper1;
+export default People;

@@ -12,7 +12,7 @@ function Header() {
             </Link>
         </div>
         <div className={styles.heading}>
-          <img src="/assets/main.png" alt="the taste talks" />
+          <img src="/assets/main.svg" alt="the taste talks" />
         </div> 
     </header>
       

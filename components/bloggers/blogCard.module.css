@@ -1,0 +1,53 @@
+
+.blogCard{
+
+    background-color: var(--primary);
+    height: 25vh;
+    width: 100%;
+    max-width: 80rem;
+    padding: .5rem;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.blogCard img{
+
+    object-fit: cover;
+    height: 100%;
+    width: 25vh;
+
+}
+
+.textWrapper{
+
+    flex: 2 1 0;
+    padding: 5%;
+}
+
+.textWrapper h4{
+
+    font-size: 1.75rem;
+    font-weight: 500;
+
+}
+
+.textWrapper h4 span{
+
+    font-weight: 600;
+    font-size: 2rem;
+    margin: .5rem;
+
+}
+
+.caption {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    float: right;
+
+}

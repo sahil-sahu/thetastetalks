@@ -1,7 +1,6 @@
 
 .mainHeading{
 
-    padding: 10px;
     text-align: center;
     margin-top: 2rem;
 
@@ -9,9 +8,8 @@
 
 .caption{
     padding: 10px;
-    text-align: center;
     width: 100%;
-    max-width: 100rem;
+    max-width: 70rem;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -24,6 +22,108 @@
     text-align: right;
 
 }
+
+.bloggerfab{
+
+    max-width: 80rem;
+    margin: auto;
+
+}
+
+.fabHeading{
+
+    width: 100%;
+    padding: 1rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.fabHeading > div{
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: .8rem;
+
+}
+
+.container{
+
+    max-width: 80rem;
+    width: 100%;
+    padding: 1rem;
+    margin: auto;
+
+}
+
+.borderUp::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 60rem;
+    width: 80%;
+    padding: 1rem;
+    margin: auto;
+    border-top: 2px solid var(--white);
+}
+
+.whiteHeading{
+
+    color: var(--white);
+    text-align: center;
+    margin: 3%;
+
+}
+
+.parallaxImg{
+
+    filter: brightness(40%);
+
+}
+
+.restaurantCarousel{
+
+    margin: 3% auto;
+
+}
+
+.entrepreneur{
+
+    max-width: 80rem;
+    margin: auto;
+
+}
+
+.entrepreneurContainer{
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.more{
+
+    flex: 0 0 5%;
+    transition: .1s ease-out;
+    height: 100%;
+
+}
+
+.more svg{
+
+    transition: .2s ease-in-out;
+
+}
+.more:hover svg{
+
+    transform: scale(1.4) translateX(2rem);
+
+}
+
 
 @media screen and (max-width:600px) {
     

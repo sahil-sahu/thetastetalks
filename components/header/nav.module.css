@@ -19,10 +19,31 @@
 
 }
 
-.nav ul::before{
+.navBefore ul::before{
 
     content: "";
-    border-bottom: solid 1px #000;
+    border-bottom: solid 1px var(--black);
+    width: 55%;
+    max-width: 80rem;
+    margin: 0px auto;
+    position: absolute;
+    height: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+
+}
+
+.navUp{
+
+    margin-top: 2%;
+
+}
+
+.navUp ul::before{
+
+    content: "";
+    border-top: solid 1px var(--black);
     width: 55%;
     max-width: 80rem;
     margin: 0px auto;
