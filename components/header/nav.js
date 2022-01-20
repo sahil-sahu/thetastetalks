@@ -9,15 +9,22 @@ function Nav(props){
         bar = styles.navDown;
     }
 
+    var navItems = [
+        {"name": "Restaurants", "slug":"/restaurants"},
+        {"name": "Recipes", "slug":"/recipes"},
+        {"name": "Home", "slug":"/"},
+        {"name": "Chefs", "slug":"/chefs"},
+        {"name": "Food Bloggers", "slug":"/bloggers"},
+        {"name": "Meet-ups", "slug":"/meetups"}
+    ]
+    delete navItems[props.omit]
     return (
 
         <nav className={`${styles.nav} ${bar}`} >
             <ul>
-                <li><Link href={`/restaurants`}><a>Restaurants</a></Link></li>
-                <li><Link href={`/recipes`}><a>Recipes</a></Link></li>
-                <li><Link href={`/chefs`}><a>Chefs</a></Link></li>
-                <li><Link href={`/bloggers`}><a>Food Bloggers</a></Link></li>
-                <li><Link href={`/meet-ups`}><a>Meet-ups</a></Link></li>
+                {navItems.map((object, i)=>{
+                    return(<li><Link href={object.slug}><a>{object.name}</a></Link></li>)
+                }) } 
             </ul>
         </nav>
 

@@ -3,10 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLongArrowAltRight, faStar } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
 
-function BlogCard(){
+function BlogCard(props){
 
-    let image = "https://images.pexels.com/photos/3338681/pexels-photo-3338681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    let count = "01"
+    let image = props.content.image;
+    let count = ("0" + props.count).slice(-2)
+    let title = props.content.title
     let redirect = "#"
     
     return(
@@ -15,7 +16,7 @@ function BlogCard(){
             <div className={styles.textWrapper}>
                 <h4>
                     <span>{count}</span>
-                    Doughnuts (Veg)
+                    {title}
                 </h4>
                 <div className={styles.caption}>
                     <div className="stars">

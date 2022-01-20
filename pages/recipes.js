@@ -23,7 +23,7 @@ export default function Home() {
           description="Then with a short description here."
         />
         <Header />
-        <Nav border={true} omit={2} />
+        <Nav border={true} omit={1} />
         <main>
           <h1 className={styles.mainHeading}>
             NEW REVIEWS / RECIPES EVERY WEEK
@@ -85,28 +85,15 @@ export default function Home() {
               </div>
             </Parallax>
           </section>
-          <section className={styles.entrepreneur}>
-            <h1 className={styles.mainHeading}>
-              ENTREPRENEURIAL TALKS
-            </h1>
-            <div className={styles.entrepreneurContainer}>
-              <People />
-              <Link href={`#`}>
-                <a className={styles.more} >
-                  <FontAwesomeIcon icon={faArrowRight} size="2x" color='var(--black)'/>
-                </a>
-              </Link>
-            </div>
-          </section>
-          <section className={styles.youtube}>
+          <section className="youtube">
             <h1 className={styles.mainHeading}>
              RECIPE HANDBOOK & REVIEWS
             </h1>
             <Youtube />
           </section>
-          <Footer navOmit={2} />
+          <Footer navOmit={1} />
           
         </main>
       </>
   )
-}
+} 

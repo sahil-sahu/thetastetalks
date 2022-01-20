@@ -11,9 +11,11 @@ function Header() {
                 <a className={styles.click}> click here </a>
             </Link>
         </div>
-        <div className={styles.heading}>
-          <img src="/assets/main.svg" alt="the taste talks" />
-        </div> 
+        <Link href={"/"}>
+          <div className={styles.heading}>
+            <img src="/assets/main.svg" alt="the taste talks" />
+          </div>
+        </Link> 
     </header>
       
   )

@@ -11,10 +11,61 @@
 
 }
 
-.youtubeVideos iframe{
+.ytCard{
 
-    margin: auto;
     width: 100vw; 
     height: 15vw;
     max-width: 30rem;
+    margin: auto;
+    
+
+}
+
+.ytCard img{
+
+    object-fit: cover;
+    width: 100vw; 
+    height: 15vw;
+    max-width: 30rem;
+    position: absolute;
+    filter: brightness(60%);
+
+}
+
+.ytCard a{
+
+    position: absolute;
+    width: 100vw; 
+    height: 15vw;
+    max-width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.ytCard a::before{
+
+    content: "";
+    position: absolute;
+    width: calc(100vw - 1rem); 
+    height: calc(15vw - 1rem);
+    border: var(--primary) solid 2px;
+    max-width: calc(30rem - 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.yticon{
+
+    color:var(--primary);
+    transition: .2s ease;
+    z-index: 2;
+
+}
+
+.yticon:hover{
+   color: red; 
 }
