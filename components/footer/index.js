@@ -14,7 +14,7 @@ function Footer(props){
                 <img src="/assets/main.svg" alt="the taste talks" />
             </div>
             <div className={styles.credits}>
-                Designed & Developed with <FontAwesomeIcon icon={faHeart} size="2x" color='red'/> by <a href="https://contrivers.tk" target="_blank">contrivers</a>
+                Designed & Developed with <FontAwesomeIcon icon={faHeart} size="lg" color='var(--secondary)'/> by <a href="https://contrivers.tk" target="_blank">contrivers</a>
             </div>
         </footer>
     )

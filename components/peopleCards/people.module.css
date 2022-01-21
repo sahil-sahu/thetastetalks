@@ -13,7 +13,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    margin: 5%;
+    margin: 5% auto;
     border-radius: .5rem;
 
 }
@@ -51,5 +51,11 @@
 .textWrapper h3{
 
     font-size: 1.5rem;
+
+}
+
+.textWrapper p{
+
+    font-size: 1.2rem;
 
 }

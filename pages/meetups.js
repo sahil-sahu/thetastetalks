@@ -19,7 +19,7 @@ export default function Home() {
   return (
       <>
         <NextSeo
-          title="The Taste Talks"
+          title="The Taste Talks | Meet-ups"
           description="Then with a short description here."
         />
         <Header />

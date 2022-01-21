@@ -11,7 +11,7 @@ function BlogCard(props){
     let redirect = "#"
     
     return(
-        <div className={styles.blogCard}>
+        <div className={styles.blogCard} >
             <img src={image} alt="" />
             <div className={styles.textWrapper}>
                 <h4>

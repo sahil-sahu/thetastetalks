@@ -66,6 +66,6 @@
 
 }
 
-.yticon:hover{
+.ytCard:hover .yticon{
    color: red; 
 }

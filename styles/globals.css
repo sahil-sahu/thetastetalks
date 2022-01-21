@@ -5,6 +5,8 @@
   --white: #fff;
   --speciality: url('/assets/speciality.webp');
   --restaurant: url('/assets/restaurant.webp');
+  --swiper-pagination-color: #fff;
+  --swiper-pagination-bullet-inactive-color: #fff;
 }
 
 html,

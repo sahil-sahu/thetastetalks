@@ -5,10 +5,14 @@ import { faLongArrowAltRight, faStar } from '@fortawesome/free-solid-svg-icons'
 
 function PeopleCard(props){
 
-    let data = props.obj
+    let data = props.obj;
+    let layout = `row`
+    if (props.count%2 == 0){
+        layout = `row-reverse`
+    }
 
     return(
-       <div className={styles.profile}>
+       <div className={styles.profile} style = {{flexDirection: layout,}}>
            <div className={styles.dp}>
                <img src={data.image} alt="" />
            </div>
@@ -24,7 +28,7 @@ function PeopleCard(props){
                     </div>
                 </div>
                 <p>{data.description}</p>
-                <Link href={data.url}>
+                <Link href={`/c/${data.url}`}>
                     <a>
                         Show More <FontAwesomeIcon icon={faLongArrowAltRight} size="lg"/>
                     </a>
