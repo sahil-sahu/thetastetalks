@@ -99,9 +99,6 @@ export default function Home() {
             </div>
           </section>
           <section className={styles.youtube}>
-            <h1 className={styles.mainHeading}>
-             RECIPE HANDBOOK & REVIEWS
-            </h1>
             <Youtube />
           </section>
           <Footer navOmit={2} />
