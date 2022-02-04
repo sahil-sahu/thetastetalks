@@ -1,6 +1,7 @@
+import { useState, useEffect } from 'react';
 import styles from "./main.module.css"
-import 'swiper/css';
 import Card from "./card"
+import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 function cardWrapper1(){
@@ -14,10 +15,20 @@ function cardWrapper1(){
         {"link" : "https://images.unsplash.com/photo-1481931098730-318b6f776db0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=690&q=80"},
     ]
 
+    let slidesNum = 1;
+
+    const size = useWindowSize();
+
+    if (size.width > 1000){
+        slidesNum = 3;
+    }else if (size.width > 600){
+        slidesNum = 2;
+    }
+
     return (
         <Swiper
           spaceBetween={50}
-          slidesPerView={3}
+          slidesPerView={slidesNum}
           className={styles.cardWrapper1}
         >
           
@@ -28,5 +39,27 @@ function cardWrapper1(){
         </Swiper>
       );
 }
+
+function useWindowSize() {
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+  });
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      function handleResize() {
+        setWindowSize({
+          width: window.innerWidth,
+        });
+      }
+    
+      window.addEventListener("resize", handleResize);
+      handleResize();
+      return () => window.removeEventListener("resize", handleResize);
+    }
+  }, []);
+  return windowSize;
+}
+
 
 export default cardWrapper1;

@@ -116,6 +116,7 @@
 .more svg{
 
     transition: .2s ease-in-out;
+    margin: 5px;
 
 }
 .more:hover svg{

@@ -2,6 +2,7 @@
 .youtubeVideos{
 
     display: grid;
+    display: none;
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
     width: 100%;
@@ -13,8 +14,8 @@
 
 .ytCard{
 
-    width: 100vw; 
-    height: 15vw;
+    width: 50%; 
+    height: 25%;
     max-width: 30rem;
     margin: auto;
     
@@ -24,8 +25,8 @@
 .ytCard img{
 
     object-fit: cover;
-    width: 100vw; 
-    height: 15vw;
+    width: 50%; 
+    height: 25%;
     max-width: 30rem;
     position: absolute;
     filter: brightness(60%);
@@ -35,8 +36,8 @@
 .ytCard a{
 
     position: absolute;
-    width: 100vw; 
-    height: 15vw;
+    width: 50%; 
+    height: 25%;
     max-width: 30rem;
     display: flex;
     justify-content: center;
@@ -48,8 +49,8 @@
 
     content: "";
     position: absolute;
-    width: calc(100vw - 1rem); 
-    height: calc(15vw - 1rem);
+    width: calc(50% - 1rem); 
+    height: calc(25% - 1rem);
     border: var(--primary) solid 2px;
     max-width: calc(30rem - 1rem);
     display: flex;
@@ -68,4 +69,15 @@
 
 .ytCard:hover .yticon{
    color: red; 
+}
+
+@media screen and (max-width:1100px) {
+    
+    .youtubeVideos{
+
+        display: none;
+        grid-template-columns: repeat(1, 1fr);
+    
+    }
+
 }

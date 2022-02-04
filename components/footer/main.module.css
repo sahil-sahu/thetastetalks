@@ -34,3 +34,18 @@
     color: transparent;
 
  }
+
+ @media screen and (max-width: 600px) {
+
+   .credits a{
+      -webkit-text-stroke: 1.1px #E3B692;
+   }
+
+   .footer .credits{
+
+      padding-top: 10%;
+      padding-bottom: 17.5%;
+
+   }
+    
+ }
